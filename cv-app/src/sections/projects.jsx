@@ -54,6 +54,7 @@ export default function Projects() {
                         <a
                             key={index}
                             href={project.url}
+                            target='_blank'
                             rel="noopener noreferrer"
                             className={`opacity-0 transition-all duration-1000`}
                             style={{
