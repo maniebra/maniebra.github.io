@@ -36,15 +36,15 @@ jobs:
       - name: Build
         run: |
           mkdir -p ./_site
-          cp -r ./cv-app/dist/* ./_site/
           mkdir -p ./_site/public
-          cp -r ./cv-app/public/*.mp4 ./_site/public/
-          cp -r ./cv-app/public/*.mp3 ./_site/public/
-          cp -r ./cv-app/public/*.webm ./_site/public/
-          cp -r ./cv-app/public/*.webp ./_site/public/
-          cp -r ./cv-app/public/*.png ./_site/public/
-          cp -r ./cv-app/public/*.jpg ./_site/public/
-          cp -r ./cv-app/public/*.jpeg ./_site/public/
+          cp -r ./cv-app/dist/* ./_site/
+          cp -r ./cv-app/dist/*.mp4 ./_site/public/
+          cp -r ./cv-app/dist/*.mp3 ./_site/public/
+          cp -r ./cv-app/dist/*.webm ./_site/public/
+          cp -r ./cv-app/dist/*.webp ./_site/public/
+          cp -r ./cv-app/dist/*.png ./_site/public/
+          cp -r ./cv-app/dist/*.jpg ./_site/public/
+          cp -r ./cv-app/dist/*.jpeg ./_site/public/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
