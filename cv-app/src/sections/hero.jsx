@@ -47,13 +47,13 @@ export default function Hero() {
       ) : (
         <>
           <VideoOverlay />
-          <div className="absolute top-0 mt-[75dvh] md:mt-0 md:space-y-12 inset-0 flex flex-col
-            md:left-auto md:right-0 z-30 bg-black md:bg-black/80 p-6 md:p-12 md:w-1/3 backdrop-blur-sm">
+          <div className="absolute top-0 mt-[75dvh] md:mt-0 md:space-y-8 inset-0 flex flex-col
+            md:left-auto md:right-0 z-30 bg-black md:bg-black/80 p-6 md:p-12 md:pt-6 md:w-1/3 backdrop-blur-md overflow-y-auto">
             <div className={`space-y-6 md:space-y-8 pb-8 md:pb-0 md:pt-20 w-full items-center justify-center ${showContent ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}>
-              <h1 className="text-white text-3xl pt-6 md:text-4xl font-bold text-center md:text-left">
+              <h1 className="text-white text-3xl md:text-4xl font-bold text-center md:text-left">
                 {greetingText}
               </h1>
-              <p className="text-white pt-6 text-base md:text-lg text-justify">
+              <p className="text-white pt-6 text-base md:text-lg text-justify h-min">
                 I'm a computer engineering student with a profound
                 passion for cutting-edge technologies and a keen enjoyment of
                 innovation. I am constantly exploring the latest advancements in the
@@ -69,7 +69,7 @@ export default function Hero() {
                 opportunities to grow, learn, and contribute to the development of
                 groundbreaking technology solutions.
               </p>
-              <div className="hidden md:flex mt-auto justify-between">
+              <div className="hidden md:flex mt-auto justify-between pl-12">
                 <Button onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}>
                   Learn more about me!
                 </Button>
