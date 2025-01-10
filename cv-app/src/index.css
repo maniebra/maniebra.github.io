@@ -18,3 +18,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #d1d1d1;
 }
+
+body {
+  font-family: 'Space Mono', monospace;
+}
