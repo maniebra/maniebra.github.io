@@ -7,7 +7,7 @@ export default function AboutMe() {
                 About Me
             </h1>
             <div className="flex flex-col md:flex-row gap-6 md:gap-4 pt-8 md:pt-12 w-full mx-auto h-full justify-evenly items-center">
-                <Card title="Skills" actionName="View my skills">
+                <Card title="Skills" actionName="View my skills" actionLink="#skills">
                     <p>
                         I am a skilled software engineer who knows many programming languages and frameworks. I am most proficient in web and mobile development.
                     </p>

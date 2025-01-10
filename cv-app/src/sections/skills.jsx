@@ -36,7 +36,7 @@ export default function Skills() {
     };
 
     return (
-        <div className="p-4 md:p-12 bg-black/90 backdrop-blur-lg text-white z-30">
+        <div className="p-4 md:p-12 bg-black/90 backdrop-blur-lg text-white z-30" id="skills">
             <h1 className="text-3xl md:text-4xl font-bold text-center">
                 Skills
             </h1>
