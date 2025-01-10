@@ -29,7 +29,7 @@ export default function Experience() {
                 title: "Full Stack Developer", 
                 company: "Danesh Solutions",
                 duration: "Jun 2024 - Present",
-                description: "Worked on TradeBin as a QA Engineer. Developed and maintained backend services using Django and PostgreSQL."
+                description: "Worked on TradeBin as a QA Engineer and Developer. Developed and maintained backend services using Django and PostgreSQL."
             },
             {
                 title: "Founder & Full Stack Developer",

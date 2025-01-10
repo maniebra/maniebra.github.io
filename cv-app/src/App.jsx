@@ -1,6 +1,7 @@
 import AboutMe from './sections/about-me'
 import Experience from './sections/experience'
 import Hero from './sections/hero'
+import Projects from './sections/projects'
 import Skills from './sections/skills'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Experience />
+      <Projects />
     </div>
   )
 }

@@ -12,12 +12,12 @@ export default function AboutMe() {
                         I am a skilled software engineer who knows many programming languages and frameworks. I am most proficient in web and mobile development.
                     </p>
                 </Card>
-                <Card title="Experience" actionName="See what I've done">
+                <Card title="Experience" actionName="See what I've done" actionLink="#experience">
                     <p>
                         I have a strong background in web development and have worked on a variety of projects as a full stack developer.
                     </p>
                 </Card>
-                <Card title="Projects" actionName="View my projects">
+                <Card title="Projects" actionName="View my projects" actionLink="#projects">
                     <p>
                         I have worked on a variety of academic and industrial projects throughout my career as a developer.
                     </p>
