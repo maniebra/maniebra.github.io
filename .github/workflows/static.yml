@@ -35,16 +35,9 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build
         run: |
-          mkdir -p ./_site
           mkdir -p ./_site/public
           cp -r ./cv-app/dist/* ./_site/
-          cp -r ./cv-app/dist/*.mp4 ./_site/public/
-          cp -r ./cv-app/dist/*.mp3 ./_site/public/
-          cp -r ./cv-app/dist/*.webm ./_site/public/
-          cp -r ./cv-app/dist/*.webp ./_site/public/
-          cp -r ./cv-app/dist/*.png ./_site/public/
-          cp -r ./cv-app/dist/*.jpg ./_site/public/
-          cp -r ./cv-app/dist/*.jpeg ./_site/public/
+          find ./cv-app/dist/ -type f \( -name "*.mp4" -o -name "*.mp3" -o -name "*.webm" -o -name "*.webp" -o -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \) -exec cp {} ./_site/public/ \;
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
